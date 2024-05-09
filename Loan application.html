@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script>
+    document.getElementById("loanAmount").addEventListener("input", function(event) {
+        var input = event.target.value;
+        var formattedInput = input.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        event.target.value = formattedInput;
+    });
+
+    var inputField = document.querySelector('input')
+
+    inputField.onkeyup = function(){
+        var removeChar = this.value.replace(/[^0-9\.]/g, '');
+        var removeDot = removeChar.replace(/\./g, '');
+        this.value = removeDot;
+
+        var formattedInput = this.value.replace(/\B(?=()))
+    }
+    </script>
+</head>
+<body>
+    <div class="w-[550px] h-[600px] bg-white shadow-2xl ml-[380px] mt-[20px] p-[5px]">
+        <h1 class="text-center mt-[30px] text-4xl font-bold text-amber-800 ">Loan Application</h1>
+        <form action="">
+            <br><br><br>
+            <label for="" class="ml-[70px] text-[1em]">Loan Amount</label>
+            <br>
+            <input type="text" id="loanAmount" class="pl-[10px] mt-[5px] ml-[70px] w-[400px] h-[45px] border-2 border-amber-600 outline-none">
+            <div class="ml-[440px] mt-[-30px]"><img src="/Assets/naira.png" class="w-[20px] h-[20px]" alt=""></div>
+        </form>
+    </div>
+</body>
+</html>
