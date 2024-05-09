@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script>
+    // document.getElementById("loanAmount").addEventListener("input", function(event) {
+    //     var input = event.target.value;
+    //     var formatedInput = input.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //     event.target.value = formatedInput;
+    // });
+
+    // var inputField = document.querySelector('input');
+
+    // inputField.onkeyup = function(){
+    //     var removeChar = this.value.replace(/[^0-9\.]/g, '');
+    //     var removeDot = removeChar.replace(/\./g, '');
+    //     this.value = removeDot;
+
+    //     var formatedNumber = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //     console.log(formatedNumber);
+    // }
+    </script>
+    <!-- <style>
+        .number{
+            width: 400px;
+            height: 45px;
+            border: 2px solid rgb(219, 110, 59);
+            margin-left: 60px;
+            padding-left: 10px;
+            border-radius: 8px;
+            outline: none;
+        }
+    </style> -->
+</head>
+<body class="bg-amber-200">
+    <div class="w-[530px] h-[540px] bg-white shadow-2xl ml-[400px] mt-[40px] p-[5px]">
+        <h1 class="text-center mt-[30px] text-4xl font-bold text-amber-800 ">Loan Application</h1>
+
+        <form action="" class="mt-[40px]">
+           
+            <label for="" class="ml-[65px] text-[1em] font-semibold">Loan Amount</label>
+            <input type="text" id="loanAmount" class="pl-[10px] ml-[60px] w-[400px] h-[45px] border-2 border-amber-600 outline-none rounded-lg">
+            <div class="ml-[430px] mt-[-32px]"><img src="/Assets/naira.png" class="w-[20px] h-[20px]" alt=""></div>
+            
+
+            <div class="mt-[15px]">
+                <label for=""  class="ml-[65px] text-[1em] font-semibold">Interest Rate</label>
+            <input type="text" class="pl-[10px] mt-[5px] ml-[60px] w-[400px] h-[45px] border-2 border-amber-600 outline-none rounded-lg">
+            </div>
+            
+
+            <div class="mt-[5px]">
+                <label for=""  class="ml-[65px] text-[1em] mt-[30px] font-semibold">Application Date</label>
+                <input type="date" class="pl-[10px] mt-[5px] ml-[60px] w-[400px] h-[45px] border-2 border-amber-600 outline-none rounded-lg">
+            </div>
+
+            <div class="mt-[8px]">
+                <label for=""  class="ml-[65px] text-[1em] mt-[30px] font-semibold">Term/Period</label>
+                <select name="" id="option" class="pl-[10px] mt-[5px] ml-[60px] w-[400px] h-[45px] border-2 border-amber-600 outline-none rounded-lg">
+                <option value="">2 Weeks</option>
+                <option value="">4 Weeks</option>
+                <option value="">2 Months</option>
+                <option value="">3 Months</option>
+                <option value="">4 Months</option>
+                <option value="">5 Months</option>
+                <option value="">6 Months</option>
+                <option value="">7 Months</option>
+                <option value="">8 Months</option>
+                <option value="">9 Months</option>
+                <option value="">10 Months</option>
+                <option value="">11 Months</option>
+                <option value="">1 Year</option>
+            </select>
+            </div>
+        </form>
+        <br>
+        <div class="text-white text-center w-[400px] h-[45px]  ml-[60px] bg-yellow-900 pt-[8px] font-[700] rounded-[10px] mt-[10px]"><a href="http://">Proceed ></a></div>
+    </div>
+</body>
+</html>
