@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tailwind/tailwind.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script>
+        function loan() {
+            const loan = document.getElementById("loan");
+            if (loan.classList.contains("hidden")) {
+                loan.classList.remove("hidden");
+            } else {
+                loan.classList.add("hidden")
+            }
+        }
+    </script>
+</head>
+<body class="bg-white w-[100%] h-[100%]">
+    <div class="flex bg-slate-400 h-[600px]">
+        <div class="bg-white h-[560px] w-[290px] rounded-tl-[20px] rounded-bl-[20px] ml-[10px] mt-[25px] shadow-2xl">
+            <h1 class="text-center text-orange-600 text-2xl font-bold pt-[10px]">SLIVER CONCEOPT</h1>
+
+            <div class="flex  font-[500] ml-[60px] mt-[50px] text-orange-600 hover:bg-orange-600 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+                <ion-icon name="person-circle-outline" class="mt-1"></ion-icon>
+                <p class="ml-1">profile</p>
+            </div>
+
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-orange-600 hover:bg-orange-600 hover:h-10 hover:w-[160px]  hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2 " onclick="loan()">
+                <ion-icon name="newspaper-outline" class="mt-1"></ion-icon>     
+                <p class="ml-1">Loan</p>
+            </div>
+            <div id="loan" class="hidden text-center text-orange-600 ">
+                <a href=""><li>My Loan</li></a>
+                <a href=""><li class="ml-[25px] mt-[20px]">Refund Loan</li></a>
+            </div>
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-orange-600 hover:bg-orange-600 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+                <ion-icon name="people-circle-outline" class="mt-1" ></ion-icon>
+                <p class="ml-1">Guarantor</p>
+            </div>
+
+        </div>
+        <div class=" bg-orange-600 h-[560px] w-[930px] ml-[20px] rounded-tr-[20px] rounded-br-[20px] mt-[25px] shadow-2xl">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
