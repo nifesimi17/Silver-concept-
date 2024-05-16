@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/tailwind2/tailwind.js"></script>
+    <!-- <script src="/tailwind2/tailwind.js"></script> -->
+    <link rel="stylesheet" href="/src/output.css">
     <script>
        function signup(evet){
             event.preventDefault();
 
-            var Firstname = document.getElementById("Firstname").value;
-            var Lastname = document.getElementById("Lastname").value;
-            var EmailAddress = document.getElementById("EmailAddress").value;
-            var passwrd = document.getElementById("passwrd").value;
-            var Confirmpasswrd = document.getElementById("Confirmpasswrd").value;
+            const Firstname = document.getElementById("Firstname").value;
+            const Lastname = document.getElementById("Lastname").value;
+            const EmailAddress = document.getElementById("EmailAddress").value;
+            const passwrd = document.getElementById("passwrd").value;
+            const Confirmpasswrd = document.getElementById("Confirmpasswrd").value;
 
             if(Firstname =="" || Lastname =="" || EmailAddress =="" || passwrd =="" || Confirmpasswrd =="") {
                 alert("Field can not empty");
-                return;
+                return false;
             }
-            var regex = /[!@#$%^&*(),.?":{}|<>]/;
+            const regex = /[!@#$%^&*(),.?":{}|<>]/;
             if (!regex.test(passwrd)) {
                alert("Password must contain at least one special character");
-               return;
+               return false;
              }
             if(passwrd != Confirmpasswrd){
                alert("Password do not match");
-               return;
+               return false;
             }
             else{
                 alert("Signup successful");
-                return;
+                return true;
             }
 
         }
@@ -92,7 +93,7 @@
                <br>
                <br>
 
-               <div class="text-center w-[300px] h-[45px] bg-yellow-900 text-white font-bold ml-[240px] pt-[10px] rounded-[10px] mt-[15px]"><button onclick="signup()">Create Account</button></div>
+               <div class="text-center w-[300px] h-[45px] bg-yellow-900 text-white font-bold ml-[240px] pt-[10px] rounded-[10px] mt-[15px]"><button class="outline-none" onclick="if (signup()) { window.location.href = 'http://127.0.0.1:5501/admindashboard.html'; }">Create Account</button></div>
                <p class="mt-[10px] text-center text-amber-950 font-[500]">Already have an Account?<a href="" class="underline text-amber-700">Sign in</a></p>
             </form>
          </div>

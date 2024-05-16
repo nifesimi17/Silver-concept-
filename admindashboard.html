@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <!-- <link rel="stylesheet" href="/src/output.css"> -->
+    <script>
+     function Customer() {
+        const list = document.getElementById("list");
+        if (list.classList.contains("hidden")) {
+            list.classList.remove("hidden");
+        } else {
+            list.classList.add("hidden");
+         }
+        };
+
+        function Members() {
+        const member = document.getElementById("member");
+        if (member.classList.contains("hidden")) {
+            member.classList.remove("hidden");
+        } else {
+            member.classList.add("hidden");
+         }
+        };
+
+        function Loanrequest() {
+        const loan = document.getElementById("loan");
+        if (loan.classList.contains("hidden")) {
+            loan.classList.remove("hidden");
+        } else {
+            loan.classList.add("hidden");
+         }
+        };
+    </script>
+</head>
+<body>
+    <div class="w-[1366px] h-[600px]  mt-[20px] flex  bg-transparent">
+
+        <div class="w-[250px] h-[600px] rounded-tl-[35px]  shadow-2xl shadow-black ml-[15px] rounded-bl-[25px] overflow-y-auto  overflow-clip">
+            
+            <P class="text-center font-bold text-2xl text-amber-900 mt-[10px]">SILVER CONCEPT</P>
+            
+                <!-- ------Contents------->
+            <div class="mt-[10px]">
+                <div class="flex hover:text-sm mt-[]" onclick="Members()">
+                    <ion-icon name="person" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Members</p>        
+                </div>
+        
+                <div id="member" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">add Members</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[47px]">View Members</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[73px]">Manage Members</li></a>
+                </div>
+    
+                <div class="flex hover:text-sm" onclick="Loanrequest()">
+                    <ion-icon name="newspaper" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Loans</p>        
+                </div>
+        
+                <div id="loan" class="hidden">
+                    <a href="http://127.0.0.1:5501/Loan%20form.html"><li class="text-center text-amber-900 ml-[34px]">Apply for Loan</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[34px]">Manage Loans</li></a>
+                </div>
+        
+                <div class="flex hover:text-sm"  onclick="Customer()">
+                    <ion-icon name="people" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Clients</p>       
+                </div>
+        
+                <div id="list" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">add client</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[47px]">View client</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">Edit client</li></a>
+                </div>
+        
+                <div class="flex hover:text-sm">
+                    <ion-icon name="wallet"  class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[21px] ml-[10px] font-semibold">Wallet</p>       
+                </div>
+            </div>
+
+            <div class="ml-[10px] mt-[310px] flex p-[px]">
+                <img src="/Assets/profile.png" class="w-[40px] " alt="">
+                <div>
+                    <h4 class="font-[500] ml-[10px] ">Adeyemi collins</h4>
+                    <p class="text-sm ml-[10px]">Adeyemi@gmail.com</p>
+                </div>
+                
+                <div class="">
+                    <button><ion-icon name="exit-outline"  class="text-2xl ml-[20px] mt-[10px] text-gray-900 outline-none"></ion-icon></button>
+                </div>
+            </div>
+    
+         </div> 
+     
+                <!-- ------Dashboard----- -->
+        <div class="w-[1080px] h-[600px]  rounded-tr-[35px] ml-[10px] bg-gray-200 shadow-2xl shadow-black rounded-br-[25px] p-[5px]">
+  
+            <!-- -----Header---- -->
+            <div class="flex gap-20">
+                <p class="text-4xl font-bold mt-[10px] ml-[5px]  text-white">Hello Adeyemi!</p>
+                <div>
+                    <input type="text" placeholder="Search here" class="w-[500px] h-[35px] mt-[15px] pl-[30px] rounded-lg outline-none">
+                    <img src="/Assets/search.png" class="w-[15px] ml-[470px] mt-[-25px]" alt="">
+                </div>
+                <div>
+                    <button>
+                        <box-icon name='bell' type='solid' color='#ffffff' class="mt-[20px] ml-[80px]"></box-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-[30px] space-x-4 flex ml-[10px]">
+                <div class="w-[200px] h-[120px] rounded-lg bg-white  p-[5px] shadow-2xl">
+                    <p class="text-2xl font-bold  mt-[5px] text-amber-900 text-center">Total Members</p>
+                    <box-icon name='group' type='solid' color='#7b260c' class="w-[40px] h-[40px] ml-[90px] mt-[12px]"></box-icon>
+                    <p class="text-4xl font-bold mt-[-47px] ml-[20px] text-amber-900">100</p>
+                </div>
+    
+                <div class="w-[200px] h-[120px] bg-white  rounded-lg p-[5px] shadow-2xl">
+                    <box-icon type='solid' name='group' class="ml-[10px] mt-[5px] w-[35px] h-[35px]" color='#7b260c'></box-icon>
+                    <p class="font-bold ml-[140px] mt-[-45px] text-amber-900 text-4xl">70</p>
+                    <p class="text-2xl font-bold text-amber-900 text-center">Active Members today</p>
+                </div>
+    
+                
+                <div class="w-[190px] h-[120px] bg-white rounded-lg p-[5px] shadow-2xl">
+                    <p class="text-2xl font-bold text-amber-900 text-center ">Clients</p>
+                    <ion-icon name="people" class="ml-[100px] text-4xl text-amber-900 mt-[17px]"></ion-icon>
+                    <p class="font-bold ml-[30px] mt-[-45px] text-amber-900 text-4xl">200</p>
+                </div>
+
+                <div class="w-[200px] h-[120px] bg-white  rounded-lg p-[5px] shadow-2xl">
+                    <p class="text-2xl font-bold text-amber-900 text-center">Pending Loans</p>
+                    <img src="/Assets/checked.png" class="w-[50px] ml-[20px] mt-[10px]" alt="">
+                    <p class="font-bold ml-[10px] mt-[-40px] text-amber-900 text-3xl"></p>
+                </div>
+
+                <div class="w-[200px] h-[120px] bg-white  rounded-lg p-[5px] shadow-2xl">
+                    <p class="text-2xl font-bold text-amber-900 text-center">Overdue Loans</p>
+                    <img src="/Assets/no.png" class="w-[50px] ml-[20px] mt-[10px]" alt="">
+                    <p class="font-bold ml-[10px] mt-[-40px] text-amber-900 text-3xl"></p>
+                </div>
+            
+            </div>
+           
+            <!-- --------transaction container and graph -------- -->
+            <div class="flex mt-[30px] space-x-2">
+
+                <!-- -------Graph------ -->
+                  
+                <div class="w-[600px] h-[350px] bg-white shadow-2xl ml-[10px] rounded-lg p-[5px]">
+                    
+                    <div class="flex">
+                        <h2 class="font-[600] mt-[10px] ml-[15px]  text-amber-900 text-xl">Activities</h2>
+                        <div>
+                            <input type="date"  class="mt-[7px] ml-[340px] w-[135px] h-[35px] border-2 border-amber-400 outline-none rounded-[30px] pl-[10px] font-semibold" id="">
+                        </div>
+                    </div>
+
+                    <div class="flex ml-[10px]">
+                        <div class="w-[100px] h-[150px] bg-amber-100 ml-[20px] mt-[10px] rounded-t-full p-[5px]">
+                          <div class="w-[100px] h-[200px] bg-amber-300 mt-[70px] ml-[-5px] rounded-t-full"></div>
+                        </div>
+                    
+                        <div class="w-[100px] h-[100px] bg-amber-100 ml-[20px] mt-[110px] rounded-t-full p-[5px]">
+                          <div class="w-[100px] h-[120px] bg-amber-300 mt-[50px] ml-[-5px] rounded-t-full"></div>
+                        </div>
+
+                        <div class="w-[100px] h-[100px] bg-amber-100 ml-[20px] mt-[90px] rounded-t-full p-[5px]">
+                            <div class="w-[100px] h-[140px] bg-amber-300 mt-[50px] ml-[-5px] rounded-t-full"></div>
+                        </div>
+
+                        <div class="w-[100px] h-[110px] bg-amber-100 ml-[20px] mt-[70px] rounded-t-full p-[5px]">
+                            <div class="w-[100px] h-[150px] bg-amber-300 mt-[60px] ml-[-5px] rounded-t-full"></div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <!-- --------transaction------- -->
+
+                <div class="w-[450px] h-[350px] bg-white shadow-2xl rounded-lg p-[5px]">
+                    <h2 class="font-[600] mt-[10px] ml-[10px]  text-amber-900 text-xl">Latest Transactions</h2>
+
+                    <div>
+                        <div class="flex mt-[20px]">
+
+                            <div class="flex">
+                                <img src="/Assets/profile.png" class="w-[30px] h-[30px] mt-[20px] ml-[10px]" alt="">
+                                <p class="mt-[25px] ml-[5px] text-sm font-bold"><a href="">milo martins</a></p>
+                            </div>
+
+                            <h3 class="ml-[50px] mt-[20px] text-[0.7em] text-gray-500">Amount<p class="font-bold text-black">$300,000</p></h3>
+                            
+                            <p class=" text-[0.8em] ml-[45px] mt-[25px] text-gray-500">10 mins ago</p>
+
+                            <p class=" text-[0.8em] ml-[25px] mt-[25px] text-gray-500">15/7/2024</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex gap-">
+
+                            <div class="flex">
+                                <img src="/Assets/profile.png" class="w-[30px] h-[30px] mt-[20px] ml-[10px]" alt="">
+                                <p class="mt-[25px] ml-[5px] text-sm font-bold"><a href="">milo martins</a></p>
+                            </div>
+
+                            <h3 class="ml-[50px] mt-[20px] text-[0.7em] text-gray-500">Amount<p class="font-bold text-black">$300,000</p></h3>
+                            
+                            <p class=" text-[0.8em] ml-[45px] mt-[25px] text-gray-500">10 mins ago</p>
+
+                            <p class=" text-[0.8em] ml-[25px] mt-[25px] text-gray-500">15/7/2024</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex gap-">
+
+                            <div class="flex">
+                                <img src="/Assets/profile.png" class="w-[30px] h-[30px] mt-[20px] ml-[10px]" alt="">
+                                <p class="mt-[25px] ml-[5px] text-sm font-bold"><a href="">milo martins</a></p>
+                            </div>
+
+                            <h3 class="ml-[50px] mt-[20px] text-[0.7em] text-gray-500">Amount<p class="font-bold text-black">$300,000</p></h3>
+                            
+                            <p class=" text-[0.8em] ml-[45px] mt-[25px] text-gray-500">10 mins ago</p>
+
+                            <p class=" text-[0.8em] ml-[25px] mt-[25px] text-gray-500">15/7/2024</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex gap-">
+
+                            <div class="flex">
+                                <img src="/Assets/profile.png" class="w-[30px] h-[30px] mt-[20px] ml-[10px]" alt="">
+                                <p class="mt-[25px] ml-[5px] text-sm font-bold"><a href="">milo martins</a></p>
+                            </div>
+
+                            <h3 class="ml-[50px] mt-[20px] text-[0.7em] text-gray-500">Amount<p class="font-bold text-black">$300,000</p></h3>
+                            
+                            <p class=" text-[0.8em] ml-[45px] mt-[25px] text-gray-500">10 mins ago</p>
+
+                            <p class=" text-[0.8em] ml-[25px] mt-[25px] text-gray-500">15/7/2024</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+  
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
