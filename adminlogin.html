@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script>
+        function Login(){
+ 
+             const UsernameorEmail = document.getElementById("Username or Email").value;
+             const passwrd = document.getElementById("passwrd").value;
+             const checkbox = document.getElementById("checkbox");
+ 
+             if(UsernameorEmail =="" || passwrd =="") {
+                 alert("Field can not empty");
+                 return false;
+             }
+             else{
+                 alert("Login successful");
+                 return true;
+             }
+            //  if (checkbox.checked) {
+            //     console.log("checkbox is checked");
+            // } 
+            // else {
+            //     console.log("checkbox is not checked");
+            
+            // }
+         }
+     </script>
+</head>
+<body>
+    <nav class="w-[1366px] h-[70px] flex gap-[640px]">
+        <div>
+           <h1 class="text-3xl text-amber-900 font-bold pt-[5px] ml-[30px]">SILVER CONCEPT</h1>
+           <p class="text-sm text-amber-500 ml-[30px]">Microfinance Bank</p>
+        </div>
+     
+         <div class="flex pt-[18px] gap-[20px] font-[400]  text-orange-700 ">
+           <a href="" class="">Home</a>
+           <a href="" class="">Sustainability</a>
+           <a href="" class="">Our impact</a>
+           <a href="" class="">About</a>
+           <a href="">Contact us</a>
+        </div>
+     </nav>
+
+     <div class="w-[1366px] h-[563px]  flex">
+
+        <div class="w-[583px] h-[563px]">
+           <img src="/Assets/view-3d-practicing-lawyer.jpg" class="mt-[0px] h-[563px] w-[583px]" alt="">
+        </div>
+
+        <div class="w-[783px] h-[563px] bg-amber-100 p-[5px] pt-[100px]">
+           <h1 class="text-center mt-[10px] text-4xl font-bold text-amber-800">Admin Login</h1>
+
+           <form action="">
+              <div class="">
+                 <box-icon name='user' color='#a4a2a2' class="ml-[160px] pt-[10px]"></box-icon>
+                 <input type="text and email" id="Username or Email" placeholder="Username or Email" class="outline-none w-[460px] h-[40px] pl-[20px] mt-[70px] ml-[-27px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
+              </div>
+
+              <div>
+                 <box-icon name='hide' color='#a4a2a2' class="ml-[160px] pt-[10px] "></box-icon>
+                 <input type="password" id="passwrd" placeholder="Password" class="outline-none w-[460px] h-[40px] pl-[20px] mt-[15px] ml-[-27px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
+              </div>
+
+              <div class="ml-[165px] mt-[20px] flex">
+                <input type="checkbox" id="checkbox" value="checked" ><p class="ml-[10px] font-normal">Remember me</p>
+                
+              </div>
+
+              <br>
+
+              <div class="text-center w-[300px] h-[45px] bg-yellow-900 text-white font-bold ml-[240px] pt-[10px] rounded-[10px] mt-[15px]"><button class="outline-none" onclick="Login()">Login</button></div>
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
