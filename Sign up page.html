@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="/tailwind2/tailwind.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <script>
        function signup(evet){
             event.preventDefault();
@@ -36,10 +38,10 @@
         }
     </script>
 </head>
-<body>
+<body class="bg-black h-[100%] w-[100%]">
    <div>
 
-      <nav class="w-[1366px] h-[70px] flex gap-[640px]">
+      <nav class="bg-white w-[1280px] h-[70px] flex gap-[500px]">
          <div>
             <h1 class="text-3xl text-amber-900 font-bold pt-[5px] ml-[30px]">SILVER CONCEPT</h1>
             <p class="text-sm text-amber-500 ml-[30px]">Microfinance Bank</p>
@@ -54,14 +56,133 @@
          </div>
       </nav>
 
-      <div class="w-[1366px] h-[563px]  flex">
-         <div class="w-[583px] h-[563px]">
-            <img src="/Assets/view-3d-practicing-lawyer.jpg" class="mt-[0px] h-[563px] w-[583px]" alt="">
+      <div class=" flex">
+         <div class="w-[480px] h-[590px]">
+            <img src="/Assets/view-3d-practicing-lawyer.jpg" class="mt-[0px] h-[590px]" alt="">
          </div>
 
-         <div class="w-[783px] h-[563px] bg-amber-100 p-[5px]">
-            <h1 class="text-center mt-[30px] text-4xl font-bold text-amber-800">Create Account</h1>
-            <form action="">
+         <div class="w-[880px] h-[590px] bg-amber-100 ">
+            <h1 class="text-center mt-[5px] text-4xl font-bold text-amber-800">Create Account</h1>
+            <form action="" class="mt-[5px] ml-[70px]">
+               <div class="flex ml-[60px]">
+                  <div>
+                     <label  for="">Firstname</label><br>
+                     <div class="flex ">
+                        
+                        <input  type="text" placeholder="Firstname" class="bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                        <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
+                     </div>
+                  </div>
+                  <div>
+                     <label  for="" class="ml-[230px]">Surname</label><br>
+                     <div class="flex ml-[180px]">
+                        <input  type="text" placeholder="Surname" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                        <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex mt-[10px] ml-[60px]">
+                   <div>
+                       <label  for="">Nationalilty</label><br>
+                       <div class="flex ml-[]">
+                           <select name="" id="Nationalilty" onchange="populateState()" placeholder="Nationalilty" class="bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800">
+                               <option value="">Nationalilty</option>
+                           </select>
+                           <box-icon name='map' id="" class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
+                       </div>
+                   </div>
+                   <div>
+                       <label  for="" class="ml-[220px]">State</label><br>
+                       <div class="flex ml-[170px]">
+                           <select name="" id="State" onchange="populateLGA()" placeholder="State" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800">
+                               <option value="">Select State</option>
+                           </select>
+                           <box-icon name='map' class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
+                       </div>
+                   </div>
+               </div>
+                   <div class="flex mt-[10px] ml-[60px]">
+                       <div>
+                           <label  for="">LGA</label><br>
+                           <div class="flex">
+                               <select name="" id="LGA"  placeholder="LGA" class="bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800">
+                                   <option value="">LGA</option>
+                               </select>
+                               <box-icon name='map' id="LGA" class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
+                           </div>
+                       </div>
+                       <div>
+                           <label  for="" class="ml-[270px]">Phone No</label><br>
+                           <div class="flex ml-[220px]">
+                               <input  type="text" placeholder="Phone No" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                               <box-icon name='phone' color='grey' class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
+                           </div>
+                       </div>
+                   </div>
+                       <div class="flex mt-[10px] ml-[60px]">
+                           <div>
+                               <label  for="">Email Adddress</label><br>
+                               <div class="flex"> 
+                                   <input  type="text" placeholder="Email Adddress" class="bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                                   <box-icon name='envelope' color="grey" class="ml-[-240px] mt-[5px] w-[20px]"></box-icon>
+                               </div>
+                           </div>
+                           <div>
+                               <label  for="" class="ml-[190px]">Age</label><br>
+                               <div class="flex ml-[140px]">
+                                   <input  type="text" placeholder="Age" class= "ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                                   <box-icon type='solid' name='calendar' color="grey" class="ml-[-240px] mt-[5px] w-[20px]"></box-icon>
+                               </div>
+                           </div>
+                       </div>
+                           <div class="flex mt-[10px] ml-[60px]">
+                               <div>
+                                   <label  for="">Occupation</label><br>
+                                   <div class="flex">
+                                       <input  type="text" placeholder="Occupation" class="bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                                       <box-icon name='briefcase-alt' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
+                                   </div>
+                               </div>
+                               <div>
+                                   <label  for="" class="ml-[220px]">Religion</label><br>
+                                   <div class="flex ml-[170px]">
+                                       <input  type="text" placeholder="Religion" class= "ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                                       <box-icon name='dialpad' color="grey" class="ml-[-240px] mt-[5px] w-[15px]"></box-icon>
+                                   </div>
+                               </div>
+                              </div>
+                              <div class="flex mt-[10px] ml-[60px]">
+                                 <div>
+                                     <label  for="">NIN</label><br>
+                                     <div class="flex">
+                                         <input  type="text" placeholder="NIN" class="bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                                         <box-icon name='dialpad' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <label  for="" class="ml-[270px]">BVN</label><br>
+                                     <div class="flex ml-[170px]">
+                                         <input  type="text" placeholder="BVN" class= "ml-[100px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                                         <box-icon name='dialpad' color="grey" class="ml-[-240px] mt-[5px] w-[15px]"></box-icon>
+                                     </div>
+                                 </div>
+                              </div>
+
+                       <div class="mt-[10px] ml-[60px]">
+                           <label  for="" class="">Home Address</label><br>
+                           <div class="flex">
+                               <input  type="text" placeholder="Home Adddress" class=" bg-transparent mt-[] px-[30px] w-[550px] h-[35px] border border-amber-800" required>
+                               <box-icon name='map' class="ml-[-540px] mt-1 w-[20px]" ></box-icon>
+                           </div>
+                           <div class="mt-[10px] ml-[400px]">
+                              <button class="bg-amber-800 w-[150px] h-[40px] rounded-md ">Next Page <box-icon name='right-arrow-alt' class="mt-[-5px] w-[50px] ml-[-10px]" ></box-icon></button>
+                              
+                           </div>
+                       </div>
+   
+               
+           </form>
+            <!-- <form action="">
                <input type="text" id="Firstname" placeholder="Firstname" class="outline-none w-[460px] h-[40px] pl-[5px] mt-[70px] ml-[160px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
                <input type="text" id="Lastname" placeholder="Lastname" class="outline-none w-[460px] h-[40px] pl-[5px] mt-[20px] ml-[160px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
                <input type="text" id="EmailAddress" placeholder="Email Address" class="outline-none w-[460px] h-[40px] pl-[5px] mt-[15px] ml-[160px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
@@ -71,7 +192,7 @@
                <br>
                <div class="text-center w-[300px] h-[45px] bg-yellow-900 text-white font-bold ml-[240px] pt-[10px] rounded-[10px] mt-[20px]"><button onclick="signup()">Create Account</button></div>
                <p class="mt-[10px] text-center text-amber-950 font-[500]">Already have an Account?<a href="" class="underline text-amber-700">Sign in</a></p>
-            </form>
+            </form> -->
          </div>
       </div>
    </div>
