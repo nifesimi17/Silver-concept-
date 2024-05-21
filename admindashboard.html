@@ -33,6 +33,15 @@
             loan.classList.add("hidden");
          }
         };
+
+        function Agent() {
+        const aget = document.getElementById("aget");
+        if (aget.classList.contains("hidden")) {
+            aget.classList.remove("hidden");
+        } else {
+            aget.classList.add("hidden");
+         }
+        };
     </script>
 </head>
 <body>
@@ -52,7 +61,7 @@
                 <div id="member" class="hidden">
                     <a href=""><li class="text-center text-amber-900 ml-[40px]">add Members</li></a>
                     <a href=""><li class="text-center text-amber-900 ml-[47px]">View Members</li></a>
-                    <a href=""><li class="text-center text-amber-900 ml-[73px]">Manage Members</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[71px]">Manage Members</li></a>
                 </div>
     
                 <div class="flex hover:text-sm" onclick="Loanrequest()">
@@ -61,19 +70,30 @@
                 </div>
         
                 <div id="loan" class="hidden">
-                    <a href="http://127.0.0.1:5501/Loan%20form.html"><li class="text-center text-amber-900 ml-[34px]">Apply for Loan</li></a>
-                    <a href=""><li class="text-center text-amber-900 ml-[34px]">Manage Loans</li></a>
+                    <a href="http://127.0.0.1:5501/applyloan.html"><li class="text-center text-amber-900 ml-[40px]">Apply for Loan</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[39px]">Manage Loans</li></a>
                 </div>
+                
         
                 <div class="flex hover:text-sm"  onclick="Customer()">
                     <ion-icon name="people" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
-                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Clients</p>       
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Customer</p>       
                 </div>
         
                 <div id="list" class="hidden">
-                    <a href=""><li class="text-center text-amber-900 ml-[40px]">add client</li></a>
-                    <a href=""><li class="text-center text-amber-900 ml-[47px]">View client</li></a>
-                    <a href=""><li class="text-center text-amber-900 ml-[40px]">Edit client</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">add customer</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[45px]">View customer</li></a>
+                </div>
+
+                <div class="flex hover:text-sm"  onclick="Agent()">
+                    <ion-icon name="person" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Agent</p>       
+                </div>
+        
+                <div id="aget" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[10px]">add agent</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">manage agent</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[36px]">update record</li></a>
                 </div>
         
                 <div class="flex hover:text-sm">
@@ -82,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="ml-[10px] mt-[310px] flex p-[px]">
+            <div class="ml-[10px] mt-[270px] flex p-[px]">
                 <img src="/Assets/profile.png" class="w-[40px] " alt="">
                 <div>
                     <h4 class="font-[500] ml-[10px] ">Adeyemi collins</h4>
@@ -97,7 +117,7 @@
          </div> 
      
                 <!-- ------Dashboard----- -->
-        <div class="w-[1080px] h-[600px]  rounded-tr-[35px] ml-[10px] bg-gray-200 shadow-2xl shadow-black rounded-br-[25px] p-[5px]">
+        <div class="w-[1080px] h-[600px]  rounded-tr-[35px] ml-[10px] bg-amber-800 shadow-2xl shadow-black rounded-br-[25px] p-[5px]">
   
             <!-- -----Header---- -->
             <div class="flex gap-20">
@@ -128,7 +148,7 @@
     
                 
                 <div class="w-[190px] h-[120px] bg-white rounded-lg p-[5px] shadow-2xl">
-                    <p class="text-2xl font-bold text-amber-900 text-center ">Clients</p>
+                    <p class="text-2xl font-bold text-amber-900 text-center ">Customers</p>
                     <ion-icon name="people" class="ml-[100px] text-4xl text-amber-900 mt-[17px]"></ion-icon>
                     <p class="font-bold ml-[30px] mt-[-45px] text-amber-900 text-4xl">200</p>
                 </div>
