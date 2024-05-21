@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <!-- <link rel="stylesheet" href="/src/output.css"> -->
+    <script>
+     function Customer() {
+        const list = document.getElementById("list");
+        if (list.classList.contains("hidden")) {
+            list.classList.remove("hidden");
+        } else {
+            list.classList.add("hidden");
+         }
+        };
+
+        function Members() {
+        const member = document.getElementById("member");
+        if (member.classList.contains("hidden")) {
+            member.classList.remove("hidden");
+        } else {
+            member.classList.add("hidden");
+         }
+        };
+
+        function Loanrequest() {
+        const loan = document.getElementById("loan");
+        if (loan.classList.contains("hidden")) {
+            loan.classList.remove("hidden");
+        } else {
+            loan.classList.add("hidden");
+         }
+        };
+
+        function Agent() {
+        const aget = document.getElementById("aget");
+        if (aget.classList.contains("hidden")) {
+            aget.classList.remove("hidden");
+        } else {
+            aget.classList.add("hidden");
+         }
+        };
+    </script>
+</head>
+<body>
+    <div class="w-[1366px] h-[600px]  mt-[20px] flex  bg-transparent">
+
+        <div class="w-[250px] h-[600px] rounded-tl-[35px]  shadow-2xl shadow-black ml-[15px] rounded-bl-[25px] overflow-y-auto  overflow-clip">
+            
+            <P class="text-center font-bold text-2xl text-amber-900 mt-[10px]">SILVER CONCEPT</P>
+            
+                <!-- ------Contents------->
+            <div class="mt-[10px]">
+                <div class="flex hover:text-sm mt-[]" onclick="Members()">
+                    <ion-icon name="person" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Members</p>        
+                </div>
+        
+                <div id="member" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">add Members</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[47px]">View Members</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[71px]">Manage Members</li></a>
+                </div>
+    
+                <div class="flex hover:text-sm" onclick="Loanrequest()">
+                    <ion-icon name="newspaper" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Loans</p>        
+                </div>
+        
+                <div id="loan" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">Apply for Loan</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[39px]">Manage Loans</li></a>
+                </div>
+
+                 
+        
+                <div class="flex hover:text-sm"  onclick="Customer()">
+                    <ion-icon name="people" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Customer</p>       
+                </div>
+        
+                <div id="list" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">add customer</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[45px]">View customer</li></a>
+                </div>
+
+                <div class="flex hover:text-sm"  onclick="Agent()">
+                    <ion-icon name="person" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Agent</p>       
+                </div>
+        
+                <div id="aget" class="hidden">
+                    <a href=""><li class="text-center text-amber-900 ml-[10px]">add agent</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[40px]">manage agent</li></a>
+                    <a href=""><li class="text-center text-amber-900 ml-[36px]">update record</li></a>
+                </div>
+        
+                <div class="flex hover:text-sm">
+                    <ion-icon name="wallet"  class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                    <p class="text-amber-900 mt-[21px] ml-[10px] font-semibold">Wallet</p>       
+                </div>
+            </div>
+
+            <div class="ml-[10px] mt-[270px] flex p-[px]">
+                <img src="/Assets/profile.png" class="w-[40px] " alt="">
+                <div>
+                    <h4 class="font-[500] ml-[10px] ">Adeyemi collins</h4>
+                    <p class="text-sm ml-[10px]">Adeyemi@gmail.com</p>
+                </div>
+                
+                <div class="">
+                    <button><ion-icon name="exit-outline"  class="text-2xl ml-[20px] mt-[10px] text-gray-900 outline-none"></ion-icon></button>
+                </div>
+            </div>
+    
+         </div> 
+     
+                <!-- ------apply loan Dashboard----- -->
+        <div class="w-[1080px] h-[600px]  rounded-tr-[35px] ml-[10px] bg-gray-200 shadow-2xl shadow-black rounded-br-[25px] p-[5px]">
+
+            <h1 class="text-center mt-[20px] text-4xl font-bold text-amber-800 ">Loan Application</h1>
+        
+                <div class="w-[1070px] h-[470px] mt-[5px] p-[5px] pt-[70px] pl-[40px]">
+
+                    <form action="" class="">
+                        <div class="flex mt-[5px]">
+                           <div class="mt-[5px]">
+                                <label for="" class="ml-[65px] text-[1em] font-semibold mt-[20px]">Loan Amount</label>
+                                <br>
+                                <input type="text" id="loanAmount" class="pl-[10px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                                <div class="ml-[430px] mt-[-32px]"><img src="/Assets/naira.png" class="w-[20px] h-[20px]" alt=""></div>
+                           </div>
+
+                            <div class="mt-[5px]">
+                                <label for=""  class="ml-[65px] text-[1em] mt-[30px] font-semibold">Loan Purpose</label>
+                                <br>
+                                <input type="text" class="pl-[10px] mt-[px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                            </div>
+                        </div>
+
+                        <div class="flex mt-[5px]">
+                            <div class="mt-[px]">
+                                <label for=""  class="ml-[65px] text-[1em] mt-[30px] font-semibold">Application Date</label>
+                                <br>
+                                <input type="date" class="pl-[10px] pr-[5px] mt-[5px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                            </div>
+
+                            
+                            <div class="ml-[60px] mt-[5px]">
+                                <label for=""  class="ml-[5px] text-[1em]  font-semibold">Duration</label>
+                                <br>
+                                <select name="" id="option" class="pl-[10px] mt-[px]  w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                                <option value="">2 Months</option>
+                                <option value="">3 Months</option>
+                                <option value="">4 Months</option>
+                                <option value="">5 Months</option>
+                                <option value="">6 Months</option>
+                                <option value="">7 Months</option>
+                                <option value="">8 Months</option>
+                                <option value="">9 Months</option>
+                                <option value="">10 Months</option>
+                                <option value="">11 Months</option>
+                                <option value="">1 Year</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-[5px]">
+                            <div class="mt-[5px]">
+                                <label for=""  class="ml-[65px] text-[1em] mt-[0px] font-semibold">Customer ID</label>
+                                <br>
+                                <input type="text" class="pl-[10px] pr-[5px] mt-[px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                            </div>
+
+                            <div class="mt-[5px]">
+                                <label for=""  class="ml-[65px] text-[1em] mt-[30px] font-semibold">Loan Cost</label>
+                                <br>
+                                <input type="text" class="pl-[10px] mt-[px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                            </div>
+                        </div>
+
+                        <div class="flex mt-[5px]">
+                            <div class="mt-[5px]">
+                                 <label for="" class="ml-[65px] text-[1em] font-semibold mt-[20px]">Daily Refund</label>
+                                 <br>
+                                 <input type="text" id="loanAmount" class="pl-[10px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                                 <div class="ml-[430px] mt-[-32px]"><img src="/Assets/naira.png" class="w-[20px] h-[20px]" alt=""></div>
+                            </div>
+ 
+                             <div class="mt-[5px]">
+                                 <label for=""  class="ml-[65px] text-[1em] mt-[30px] font-semibold">Interest Rate</label>
+                                 <br>
+                                 <input type="text" class="pl-[10px] mt-[px] ml-[60px] w-[400px] h-[50px] border-2 border-amber-600 outline-none rounded-lg">
+                             </div>
+                         </div>
+            
+                        
+                    </form>
+                    <br>
+                </div>
+                <div class="text-white text-center w-[400px] h-[50px]  ml-[330px] bg-yellow-900 pt-[10px] font-[700] rounded-[10px] mt-[px]"><a href="http://">Proceed ></a></div>
+        </div>
+    </div>
+  
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
