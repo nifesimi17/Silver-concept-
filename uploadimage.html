@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uploadimage</title>
+    <script src="tailwind/tailwind.js"></script>
+    
+</head>
+<body class="bg-black w-[100%] h-[100%]">
+    <div class="flex">
+        <div class="w-[520px] h-[590px]">
+            <img src="/Assets/view-3d-practicing-lawyer.jpg" class="mt-[0px] h-[590px]" alt="">
+        </div>
+        <div class="w-[880px] h-[590px] bg-amber-100">
+            <h1 class="text-center font-bold text-amber-800 text-4xl">Upload Your Image</h1>
+            <div class="bg-white shadow-md w-[350px] h-[400px] ml-[230px] mt-[50px] pt-[10px] rounded-md">
+                <div class="mt-[10px]">
+                    <div class="mt-[0px]"><img src="profile2.png" alt="" class="w-[250px] h-[250px] ml-[50px] rounded-[50%]" id="pic"></div>
+                    <div class="mt-[30px] flex">
+                        <label for="input-file" class="block w-[130px] bg-amber-800 text-white rounded-[5px] cursor-pointer p-[12px] ml-[30px] ">Upload Image</label>
+                        <button class="w-[130px] bg-amber-800 text-white rounded-[5px] cursor-pointer ml-[30px]">Save</button>
+                    </div>
+                    <input type="file" accept="image/jpg, image/png image/jpeg" id="input-file" class="hidden">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let profilepic = document.getElementById("pic");
+        let inputfile = document.getElementById("input-file");
+        
+        inputfile.onchange = function(){
+            profilepic.src = URL.createObjectURL(inputfile.files[0]);
+        }
+
+    </script>
+
+</body>
+</html>
