@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uploadimage</title>
     <script src="tailwind/tailwind.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     
 </head>
 <body class="bg-black w-[100%] h-[100%]">
@@ -18,13 +20,26 @@
                 <div class="mt-[10px]">
                     <div class="mt-[0px]"><img src="profile2.png" alt="" class="w-[250px] h-[250px] ml-[50px] rounded-[50%]" id="pic"></div>
                     <div class="mt-[30px] flex">
-                        <label for="input-file" class="block w-[130px] bg-amber-800 text-white rounded-[5px] cursor-pointer p-[12px] ml-[30px] ">Upload Image</label>
-                        <button class="w-[130px] bg-amber-800 text-white rounded-[5px] cursor-pointer ml-[30px]">Save</button>
+                        <div class="flex  w-[130px] h-[40px] bg-amber-800 text-white rounded-[5px] text-sm  cursor-pointer p-[5px] ml-[30px] mt-[-1px] ">
+                        <box-icon color="white" name='cloud-upload' class="mt-[5px]"></box-icon>
+                        <label for="input-file" class="mt-[5px]" >Upload Image</label>
+                        </div>
+
+                        <div class="flex w-[130px] h-[40px] p-[5px] bg-amber-800 text-white rounded-[5px] cursor-pointer ml-[30px]  ">
+                        <box-icon color="white" name='save' class="mt-[5px]"></box-icon>
+                        <button class="mt-[5px] ml-[5px]">Save</button>
+                        </div>
                     </div>
                     <input type="file" accept="image/jpg, image/png image/jpeg" id="input-file" class="hidden">
 
                 </div>
             </div>
+            <div class="mt-[10px] ml-[410px] p-[10px] flex gap-[0px]">
+                <!-- <a href="Signuppage.html"><button class="bg-amber-800 text-white w-[150px] h-[40px] rounded-md "> <<< previous page
+                </button></a>  -->
+                
+                <a href="guarantorform.html"><button class="bg-amber-800 text-white w-[150px] h-[40px] rounded-md "> Next Page >>></button></a>
+                    
         </div>
     </div>
 
