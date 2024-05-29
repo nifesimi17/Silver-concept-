@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tailwind/tailwind.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script>
+        function loan() {
+            const loan = document.getElementById("loan");
+            if (loan.classList.contains("hidden")) {
+                loan.classList.remove("hidden");
+            } else {
+                loan.classList.add("hidden")
+            }
+        }
+    </script>
+</head>
+<body class="bg-white w-[100%] h-[100%]">
+    <div class="flex bg-slate-400 h-[600px]">
+        <div class="bg-white h-[580px] w-[290px] rounded-tl-[20px] rounded-bl-[20px] ml-[10px] mt-[10px] shadow-2xl">
+            <h1 class="text-center text-amber-800 text-2xl font-bold pt-[10px]">SLIVER CONCEPT</h1>
+
+            <div class="flex  font-[500] ml-[60px] mt-[50px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+                <ion-icon name="person-circle-outline" class="mt-1"></ion-icon>
+                <a href="usersdashboard.html">Profile</a>
+                <!-- <p class="ml-1">profile</p> -->
+            </div>
+
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px]  hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2 " onclick="loan()">
+                <ion-icon name="newspaper-outline" class="mt-1"></ion-icon>     
+                <p class="ml-1">Loan</p>
+            </div>
+            <div id="loan" class="hidden text-center text-amber-800 ">
+                <a href=""><li>My Loan</li></a>
+                <a href=""><li class="ml-[25px] mt-[20px]">Refund Loan</li></a>
+                <a href=""><li class="ml-[-15px] mt-[20px]">Wallet</li></a>
+
+            </div>
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+                <ion-icon name="people-circle-outline" class="mt-1" ></ion-icon>
+                <p class="ml-1">Guarantor</p>
+            </div>
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+                <ion-icon name="cash-outline" class="mt-1" ></ion-icon>
+                <p class="ml-1">savings</p>
+            </div>
+
+        </div>
+        <div class=" bg-amber-700 h-[580px] w-[930px] ml-[20px] rounded-tr-[20px] rounded-br-[20px] mt-[10px] shadow-2xl p-[10px]">
+            <!-- <div class="w-[900px] h-[60px] bg-white rounded-md p-[10px] mt-[-5px] flex gap-[300px]">
+                <div class="pt-[0px] flex">
+                    <box-icon name='search' color="grey" class="mt-[10px] ml-[10px] "></box-icon>
+                    <input type="text" placeholder="search" class="bg-transparent border border-gray-600 h-[40px] w-[300px] px-[35px] ml-[-30px] rounded-full"  >
+                    
+                </div>
+                <div class="flex">
+                    <box-icon type='' name='bell' color="grey" class=" w-[30px] h-[30px]" ></box-icon>
+                    <div class="flex ml-[80px]">
+                        <img src="profile2.png" alt="" class=" w-[40px] h-[40px] rounded-[50%]">
+                        <h1 class="text-1xl text-amber-800 font-medium ml-[5px]">John Banks</h1>
+                    </div>
+                </div>                
+            </div> -->
+            <div class="">
+                <!-- <div class="bg-white w-[600px] h-[550px] shadow-3xl p-[5px] mt-[10px] ml-[150px]"> -->
+                    <h1 class="text-center text-3xl font-bold text-white ">GUARANTOR FORM</h1>
+                    <form action="" class="mt-[50px] ml-[160px]">
+                        <div class="">
+                            <div>
+                                <label  for="" class="text-white">Firstname</label><br>
+                                <div class="flex">
+                                    <input  type="text" placeholder="Firstname" class="bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon>
+                                </div>
+                            </div>
+                            <div class="mt-[-60px]">
+                                <label  for="" class="ml-[300px]  text-white">Surname</label><br>
+                                <div class="flex ml-[180px] mt-[-0px]">
+                                    <input  type="text" placeholder="Surname" class="ml-[120px] bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <div>
+                                <label  for="" class="text-white">Nationalilty</label><br>
+                                <div class="flex ml-[]">
+                                    <select name="" id="Nationalilty" onchange="populateState()" placeholder="Nationalilty" class="bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md">
+                                        <option value="">Select Nationalilty</option>
+                                    </select>
+                                    <box-icon name='map' id="" class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon>
+                                </div>
+                            </div>
+                            <div class="mt-[-60px] ml-[80px]">
+                                <label  for="" class="ml-[220px] text-white">State</label><br>
+                                <div class="flex ml-[170px]">
+                                    <select name="" id="State" onchange="populateLGA()" placeholder="State" class="ml-[50px] bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md">
+                                        <option value="">Select State</option>
+                                    </select>
+                                    <box-icon name='map' class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <div>
+                                <label  for="" class="text-white">LGA</label><br>
+                                <div class="flex">
+                                    <select name="" id="LGA"  placeholder="LGA" class="bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md">
+                                        <option value="">Select LGA</option>
+                                    </select>
+                                    <box-icon name='map' id="LGA" class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon>
+                                </div>
+                            </div>
+                            <div class="ml-[32px] mt-[-60px]">
+                                <label  for="" class="ml-[270px] text-white">Phone No</label><br>
+                                <div class="flex ml-[220px]">
+                                    <input  type="text" placeholder="Phone No" class="ml-[50px] bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='phone' color='grey' class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mt-[10px]">
+                            <div>
+                                <label  for="" class="text-white">Email Adddress</label><br>
+                                <div class="flex"> 
+                                    <input  type="text" placeholder="Email Adddress" class="bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='envelope' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon>
+                                </div>
+                            </div>
+                            <div class="ml-[110px] mt-[-60px]">
+                                <label  for="" class="ml-[190px] text-white">Age</label><br>
+                                <div class="flex ml-[140px]">
+                                    <input  type="text" placeholder="Age" class= "ml-[50px] bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon type='solid' name='calendar' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <div>
+                                <label  for="" class="text-white">Occupation</label><br>
+                                <div class="flex">
+                                    <input  type="text" placeholder="Occupation" class="bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='briefcase-alt' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon>
+                                </div>
+                            </div>
+                            <div class="mt-[-60px] ml-[80px]">
+                                <label  for="" class="ml-[220px] text-white">BVN</label><br>
+                                <div class="flex ml-[170px]">
+                                    <input  type="text" placeholder="BVN" class= "ml-[50px] bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='dialpad' color="grey" class="ml-[-240px] mt-[6px] w-[15px]"></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="mt-[10px]">
+                                <label  for="" class="text-white">Home Address</label><br>
+                                <div class="flex">
+                                    <input  type="text" placeholder="Home Adddress" class=" bg-white mt-[] px-[30px] w-[550px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='map' color="grey" class="ml-[-540px] mt-[6px] w-[20px]" ></box-icon>
+                                </div>
+                            </div>   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

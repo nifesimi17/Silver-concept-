@@ -41,18 +41,18 @@
 <body class="bg-black h-[100%] w-[100%]">
    <div>
 
-      <nav class="bg-white w-[1280px] h-[70px] flex gap-[500px]">
-         <div>
-            <h1 class="text-3xl text-amber-900 font-bold pt-[5px] ml-[30px]">SILVER CONCEPT</h1>
-            <p class="text-sm text-amber-500 ml-[30px]">Microfinance Bank</p>
+      <nav class="bg-white w-[1280px] h-[70px] flex gap-[100px]">
+         <div class="ml-[20px] mt-[5px]">
+            <h1 class="text-3xl text-amber-900 font-bold pt-[5px]">SILVER CONCEPT</h1>
+            <p class="text-sm text-amber-500">Microfinance Bank</p>
          </div>
       
-          <div class="flex pt-[18px] gap-[20px] font-[400]  text-orange-700 ">
-            <a href="" class="">Home</a>
-            <a href="">Sustainability</a>
-            <a href="">Our impact</a>
-            <a href="">About</a>
-            <a href="">Contact us</a>
+          <div class=" mt-[10px]  ml-[250px]  text-red-900 ">
+            <a href="" class="ml-[20px] hover:bg-gray-300 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">Home</a>
+            <a href="" class="ml-[20px] hover:bg-gray-300 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">Sustainability</a>
+            <a href="" class="ml-[20px] hover:bg-gray-300 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">Our Impact</a>
+            <a href="" class="ml-[20px] hover:bg-gray-300 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">About</a>
+            <a href="" class="ml-[30px] hover:bg-gray-300 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">Contact Us</a>
          </div>
       </nav>
 
@@ -64,7 +64,7 @@
          <div class="w-[880px] h-[620px] bg-amber-100 mt-[]">
             <h1 class="text-center mt-[25px] text-4xl font-bold text-amber-800 ">Create Account</h1>
             <form action="" class="mt-[5px] ml-[70px]">
-               <div class="flex ml-[60px]">
+               <div class=" ml-[60px]">
                   <div>
                      <label  for="">Firstname</label><br>
                      <div class="flex ">
@@ -73,15 +73,15 @@
                         <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
                      </div>
                   </div>
-                  <div>
-                     <label  for="" class="ml-[230px]">Surname</label><br>
-                     <div class="flex ml-[180px]">
-                        <input  type="text" placeholder="Surname" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
+                  <div class="mt-[-59px]">
+                    <label  for="" class="ml-[300px]  text-black">Surname</label><br>
+                    <div class="flex ml-[180px] mt-[-0px]">
+                        <input  type="text" placeholder="Surname" class="ml-[120px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
                         <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
-                     </div>
+                    </div>
                   </div>
                </div>
-               <div class="flex mt-[10px] ml-[60px]">
+               <div class=" mt-[10px] ml-[60px]">
                    <div>
                        <label  for="">Nationalilty</label><br>
                        <div class="flex ml-[]">
@@ -91,17 +91,17 @@
                            <box-icon name='map' id="" class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
                        </div>
                    </div>
-                   <div>
-                       <label  for="" class="ml-[220px]">State</label><br>
-                       <div class="flex ml-[170px]">
-                           <select name="" id="State" onchange="populateLGA()" placeholder="State" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800">
-                               <option value="">Select State</option>
-                           </select>
-                           <box-icon name='map' class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
-                       </div>
-                   </div>
+                   <div class="mt-[-59px] ml-[80px]">
+                    <label  for="" class="ml-[220px] text-black">State</label><br>
+                    <div class="flex ml-[170px]">
+                        <select name="" id="State" onchange="populateLGA()" placeholder="State" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800">
+                            <option value="">Select State</option>
+                        </select>
+                        <box-icon name='map' class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
+                    </div>
+                </div>
                </div>
-                   <div class="flex mt-[10px] ml-[60px]">
+                   <div class=" mt-[10px] ml-[60px]">
                        <div>
                            <label  for="">LGA</label><br>
                            <div class="flex">
@@ -111,7 +111,7 @@
                                <box-icon name='map' id="LGA" class="ml-[-240px] mt-1 w-[20px]" ></box-icon>
                            </div>
                        </div>
-                       <div>
+                       <div class="ml-[32px] mt-[-59px]">
                            <label  for="" class="ml-[270px]">Phone No</label><br>
                            <div class="flex ml-[220px]">
                                <input  type="text" placeholder="Phone No" class="ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
@@ -119,7 +119,7 @@
                            </div>
                        </div>
                    </div>
-                       <div class="flex mt-[10px] ml-[60px]">
+                       <div class=" mt-[10px] ml-[60px]">
                            <div>
                                <label  for="">Email Adddress</label><br>
                                <div class="flex"> 
@@ -127,7 +127,7 @@
                                    <box-icon name='envelope' color="grey" class="ml-[-240px] mt-[5px] w-[20px]"></box-icon>
                                </div>
                            </div>
-                           <div>
+                           <div class="ml-[110px] mt-[-60px]">
                                <label  for="" class="ml-[190px]">Age</label><br>
                                <div class="flex ml-[140px]">
                                    <input  type="text" placeholder="Age" class= "ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
@@ -135,7 +135,7 @@
                                </div>
                            </div>
                        </div>
-                           <div class="flex mt-[10px] ml-[60px]">
+                           <div class="mt-[10px] ml-[60px]">
                                <div>
                                    <label  for="">Occupation</label><br>
                                    <div class="flex">
@@ -143,7 +143,7 @@
                                        <box-icon name='briefcase-alt' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
                                    </div>
                                </div>
-                               <div>
+                               <div class="ml-[80px] mt-[-60px]">
                                    <label  for="" class="ml-[220px]">Religion</label><br>
                                    <div class="flex ml-[170px]">
                                        <input  type="text" placeholder="Religion" class= "ml-[50px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
@@ -151,7 +151,7 @@
                                    </div>
                                </div>
                               </div>
-                              <div class="flex mt-[10px] ml-[60px]">
+                              <div class="mt-[10px] ml-[60px]">
                                  <div>
                                      <label  for="">NIN</label><br>
                                      <div class="flex">
@@ -159,7 +159,7 @@
                                          <box-icon name='dialpad' color="grey" class="ml-[-240px] mt-1 w-[20px]"></box-icon>
                                      </div>
                                  </div>
-                                 <div>
+                                 <div class="ml-[35px] mt-[-60px]">
                                      <label  for="" class="ml-[270px]">BVN</label><br>
                                      <div class="flex ml-[170px]">
                                          <input  type="text" placeholder="BVN" class= "ml-[100px] bg-transparent mt-[] px-[30px] w-[250px] h-[35px] border border-amber-800" required>
