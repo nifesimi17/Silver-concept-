@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/tailwind2/tailwind.js"></script>
-    <!-- <link rel="stylesheet" href="/src/output.css"> -->
+    <!-- <script src="/tailwind2/tailwind.js"></script> -->
+    <link rel="stylesheet" href="/src/output.css">
     <script>
      function Customer() {
         const list = document.getElementById("list");
@@ -65,13 +65,13 @@
                 </div>
     
                 <div class="flex hover:text-sm" onclick="Loanrequest()">
-                    <ion-icon name="newspaper" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
+                      <ion-icon name="newspaper" class="mt-[25px] ml-[50px] text-amber-900"></ion-icon>
                     <p class="text-amber-900 mt-[22px] ml-[10px] font-semibold">Loans</p>        
                 </div>
         
                 <div id="loan" class="hidden">
                     <a href="http://127.0.0.1:5501/applyloan.html"><li class="text-center text-amber-900 ml-[40px]">Apply for Loan</li></a>
-                    <a href=""><li class="text-center text-amber-900 ml-[39px]">Manage Loans</li></a>
+                    <a href="http://127.0.0.1:5501/manageloan.html"><li class="text-center text-amber-900 ml-[39px]">Manage Loans</li></a>
                 </div>
                 
         
@@ -101,35 +101,31 @@
                     <p class="text-amber-900 mt-[21px] ml-[10px] font-semibold">Wallet</p>       
                 </div>
             </div>
-
-            <div class="ml-[10px] mt-[270px] flex p-[px]">
-                <img src="/Assets/profile.png" class="w-[40px] " alt="">
-                <div>
-                    <h4 class="font-[500] ml-[10px] ">Adeyemi collins</h4>
-                    <p class="text-sm ml-[10px]">Adeyemi@gmail.com</p>
-                </div>
-                
-                <div class="">
-                    <button><ion-icon name="exit-outline"  class="text-2xl ml-[20px] mt-[10px] text-gray-900 outline-none"></ion-icon></button>
-                </div>
-            </div>
     
          </div> 
      
                 <!-- ------Dashboard----- -->
-        <div class="w-[1080px] h-[600px]  rounded-tr-[35px] ml-[10px] bg-amber-800 shadow-2xl shadow-black rounded-br-[25px] p-[5px]">
+        <div class="w-[1080px] h-[600px]  rounded-tr-[35px] ml-[10px] bg-gray-200 shadow-2xl shadow-black rounded-br-[25px] p-[5px]">
   
             <!-- -----Header---- -->
-            <div class="flex gap-20">
-                <p class="text-4xl font-bold mt-[10px] ml-[5px]  text-white">Hello Adeyemi!</p>
+            <div class="flex gap-14">
+                <p class="text-3xl font-bold mt-[10px] ml-[5px]  text-white">Hello Adeyemi!</p>
                 <div>
                     <input type="text" placeholder="Search here" class="w-[500px] h-[35px] mt-[15px] pl-[30px] rounded-lg outline-none">
                     <img src="/Assets/search.png" class="w-[15px] ml-[470px] mt-[-25px]" alt="">
                 </div>
                 <div>
                     <button>
-                        <box-icon name='bell' type='solid' color='#ffffff' class="mt-[20px] ml-[80px]"></box-icon>
+                        <box-icon name='bell' type='solid' color='#ffffff' class="mt-[20px] ml-[-20px]"></box-icon>
                     </button>
+                </div>
+
+                <div class="ml-[-25px] mt-[15px] flex p-[px] gap-2">
+                    <img src="/Assets/profile.png" class="w-[35px] h-[35px]" alt="">
+                    <div>
+                        <h4 class="font-[500] ml-[0px] mt-[-3px]">Adeyemi collins</h4>
+                        <p class="text-sm ml-[0px] mt-[-3px]">Adeyemi@gmail.com</p>
+                    </div>
                 </div>
             </div>
 

@@ -31,52 +31,91 @@
      </script>
 </head>
 <body>
-    <nav class="w-[1366px] h-[70px] flex gap-[640px]">
+     <nav class="lg:w-[1366px] w-[425px] lg:h-[70px] h-[70px] flex lg:gap-[640px] md:h-[80px] md:w-[900px]">
         <div>
-           <h1 class="text-3xl text-amber-900 font-bold pt-[5px] ml-[30px]">SILVER CONCEPT</h1>
-           <p class="text-sm text-amber-500 ml-[30px]">Microfinance Bank</p>
+           <h1 class="lg:text-3xl text-amber-900 font-bold lg:pt-[5px] lg:ml-[30px] text-xl ml-[5px] pt-[5px] md:text-3xl">SILVER CONCEPT</h1>
+           <p class="lg:text-sm text-sm text-amber-500 lg:ml-[30px] ml-[5px] md:text-lg">Microfinance Bank</p>
         </div>
-     
-         <div class="flex pt-[18px] gap-[20px] font-[400]  text-orange-700 ">
-           <a href="" class="">Home</a>
-           <a href="" class="">Sustainability</a>
-           <a href="" class="">Our impact</a>
-           <a href="" class="">About</a>
-           <a href="">Contact us</a>
+
+         <img src="/Assets/menu.png" class="lg:hidden w-8 h-8 mt-[10px] ml-[195px] md:mt-[20px] md:ml-[600px]" onclick="menubtn()" alt="" id="menu">
+         <div class=" pt-[18px] gap-[20px] font-[400]  text-orange-700 ">
+           <ul class="lg:flex lg:text-lg lg:gap-[20px] lg:block  hidden pt-[150px] lg:pt-0 space-y-5 lg:space-y-0 md:space-y-5 md:text-center md:pl-[150px] md:text-2xl" id="form">
+               <li class=""><a href="" class="">Home</a></li>
+               <li class=""><a href="" class="">Sustainability</a></li>
+               <li class=""><a href="" class="">Our impact</a></li>
+               <li class=""><a href="" class="">About</a></li>
+               <li class=""><a href="">Contact us</a></li> 
+           </ul>
         </div>
+        <img class="lg:hidden w-[40px] h-[40px] mt-[5px] ml-[100px] hidden md:ml-[300px] md:mt-[20px]" src="/Assets/reject.png" onclick="cancelbtn()" alt="" id="cancel" c>
      </nav>
 
-     <div class="w-[1366px] h-[563px]  flex">
+     <div class="lg:flex">
 
-        <div class="w-[583px] h-[563px]">
-           <img src="/Assets/view-3d-practicing-lawyer.jpg" class="mt-[0px] h-[563px] w-[583px]" alt="">
+        <div class="lg:w-[583px] lg:h-[563px] hidden lg:block">
+           <img src="/Assets/view-3d-practicing-lawyer.jpg" class="mt-[0px] h-[563px] w-[583px] " alt="">
         </div>
 
-        <div class="w-[783px] h-[563px] bg-amber-100 p-[5px] pt-[100px]">
-           <h1 class="text-center mt-[10px] text-4xl font-bold text-amber-800">Admin Login</h1>
+        <div class="lg:w-[783px] w-[110vw] h-[100vh] md:h-[1120px] lg:h-[563px] bg-amber-100 lg:p-[5px] lg:pt-[100px] pt-[120px] md:pt-[170px]" id="page">
+           <h1 class="text-center lg:mt-[10px] lg:text-4xl font-bold text-amber-800 text-4xl mt-[30px] md:text-5xl">Admin Login</h1>
 
            <form action="">
               <div class="">
-                 <box-icon name='user' color='#a4a2a2' class="ml-[160px] pt-[10px]"></box-icon>
-                 <input type="text and email" id="Username or Email" placeholder="Username or Email" class="outline-none w-[460px] h-[40px] pl-[20px] mt-[70px] ml-[-27px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
+                 <box-icon name='user' color='#a4a2a2' class="md:ml-[150px] ml-[30px] lg:ml-[160px] lg:pt-[10px] pt-[5px]"></box-icon>
+                 <input type="text and email" id="Username or Email" placeholder="Username or Email" class="placeholder:text-xl outline-none md:w-[550px] w-[350px] lg:w-[460px] h-[50px] lg:h-[40px] pl-[25px] lg:pl-[20px] lg:mt-[70px] mt-[50px] lg:ml-[-27px] ml-[-25px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
               </div>
 
               <div>
-                 <box-icon name='hide' color='#a4a2a2' class="ml-[160px] pt-[10px] "></box-icon>
-                 <input type="password" id="passwrd" placeholder="Password" class="outline-none w-[460px] h-[40px] pl-[20px] mt-[15px] ml-[-27px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
+                 <box-icon name='hide' color='#a4a2a2' class="md:ml-[150px]  lg:ml-[160px] lg:pt-[10px] ml-[30px] pt-[5px]"></box-icon>
+                 <input type="password" id="passwrd" placeholder="Password" class="placeholder:text-xl outline-none w-[350px] md:w-[550px] lg:w-[460px] h-[45px] lg:h-[40px] pl-[25px] lg:pl-[20px] lg:mt-[15px] mt-[15px] lg:ml-[-27px] ml-[-25px] border-t-0 border-r-0 border-l-0 border-2 border-orange-600 bg-transparent">
               </div>
 
-              <div class="ml-[165px] mt-[20px] flex">
-                <input type="checkbox" id="checkbox" value="checked" ><p class="ml-[10px] font-normal">Remember me</p>
+              <div class="lg:ml-[165px] lg:mt-[20px] ml-[40px] mt-[10px] flex md:ml-[160px] ">
+                <input type="checkbox" id="checkbox" value="checked" ><p class="lg:ml-[10px] font-normal ml-[5px] text-lg md:text-xl">Remember me</p>
                 
               </div>
 
               <br>
 
-              <div class="text-center w-[300px] h-[45px] bg-yellow-900 text-white font-bold ml-[240px] pt-[10px] rounded-[10px] mt-[15px] cursor-pointer" onclick="Login()">
+              <div class="text-center lg:w-[300px] w-[300px] lg:h-[45px] h-[40px] bg-yellow-900 text-white font-bold lg:ml-[240px] ml-[60px] lg:pt-[10px] pt-[5px] rounded-[10px] lg:mt-[15px] cursor-pointer md:ml-[230px] md:w-[430px] md:h-[45px] md:text-xl md:pt-[5x]" onclick="Login()">
                <button class="outline-none">Login</button>
              </div>
-              <p class="mt-[10px] text-center text-amber-950 font-[500]">Don't have an Account?<a href="" class="underline text-amber-700">Sign up </a></p>
+              <p class="mt-[10px] text-center text-amber-950 font-[500] md:text-xl">Don't have an Account?<a href="" class="underline text-amber-700">Sign up </a></p>
 </body>
+
+<script>
+
+   function menubtn(){
+       const menu = document.getElementById("menu");
+       const cancel = document.getElementById("cancel");
+       const form = document.getElementById("form");
+       const page = document.getElementById("page");
+
+
+       document.getElementById("menu").classList.add("hidden");
+       document.getElementById("form").classList.remove("hidden");
+       document.getElementById("cancel").classList.remove("hidden");
+       document.getElementById("page").classList.add("hidden");
+
+   }
+
+   function cancelbtn(){
+       const menu = document.getElementById("menu");
+       const cancel = document.getElementById("cancel");
+       const form = document.getElementById("form");
+       const page = document.getElementById("page");
+
+
+
+       document.getElementById("menu").classList.remove("hidden");
+       document.getElementById("form").classList.add("hidden");
+       document.getElementById("cancel").classList.add("hidden");
+       document.getElementById("page").classList.remove("hidden");
+       
+
+   }
+
+</script>
+
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </html>
