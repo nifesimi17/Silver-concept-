@@ -20,36 +20,36 @@
 </head>
 <body class="bg-white w-[100%] h-[100%]">
     <div class="flex bg-slate-400 h-[600px]">
-        <div class="bg-white h-[580px] w-[290px] rounded-tl-[20px] rounded-bl-[20px] ml-[10px] mt-[10px] shadow-2xl">
-            <h1 class="text-center text-amber-800 text-2xl font-bold pt-[10px]">SLIVER CONCEPT</h1>
+        <div class="bg-amber-800 h-[580px] w-[290px] rounded-tl-[20px] rounded-bl-[20px] ml-[10px] mt-[10px] shadow-2xl">
+            <h1 class="text-center text-white text-2xl font-bold pt-[10px]">SLIVER CONCEPT</h1>
 
-            <div class="flex  font-[500] ml-[60px] mt-[50px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+            <div class="flex  font-[500] ml-[60px] mt-[50px] text-white hover:bg-amber-700 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
                 <ion-icon name="person-circle-outline" class="mt-1"></ion-icon>
-                <p class="ml-1">Profile</p>
+                <a href="usersdashboard.html">Profile</a>
             </div>
 
-            <div class="flex  font-[500] ml-[60px] mt-[30px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px]  hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2 " onclick="loan()">
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-white hover:bg-amber-700 hover:h-10 hover:w-[160px]  hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2 " onclick="loan()">
                 <ion-icon name="newspaper-outline" class="mt-1"></ion-icon>     
                 <p class="ml-1">Loan</p>
             </div>
-            <div id="loan" class="hidden text-center text-amber-800 ">
-                <a href=""><li>My Loan</li></a>
-                <a href=""><li class="ml-[25px] mt-[20px]">Refund Loan</li></a>
+            <div id="loan" class="hidden text-center text-white ">
+                <a href=""><li>Apply Loan</li></a>
+                <a href="Refund.html"><li class="ml-[25px] mt-[20px]">Refund Loan</li></a>
                 <a href=""><li class="ml-[-15px] mt-[20px]">Wallet</li></a>
 
             </div>
-            <div class="flex  font-[500] ml-[60px] mt-[30px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-white hover:bg-amber-700 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
                 <ion-icon name="people-circle-outline" class="mt-1" ></ion-icon>
                 <a href="guarantordashboard.html">Guarantor</a>
                 <!-- <p class="ml-1">Guarantor</p> -->
             </div>
-            <div class="flex  font-[500] ml-[60px] mt-[30px] text-amber-800 hover:bg-amber-800 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
+            <div class="flex  font-[500] ml-[60px] mt-[30px] text-white hover:bg-amber-700 hover:h-10 hover:w-[160px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2">
                 <ion-icon name="cash-outline" class="mt-1" ></ion-icon>
                 <p class="ml-1">savings</p>
             </div>
 
         </div>
-        <div class=" bg-amber-800 h-[580px] w-[930px] ml-[20px] rounded-tr-[20px] rounded-br-[20px] mt-[10px] shadow-2xl p-[10px]">
+        <div class=" bg-white h-[580px] w-[930px] ml-[20px] rounded-tr-[20px] rounded-br-[20px] mt-[10px] shadow-2xl p-[10px]">
             <!-- <div class="w-[900px] h-[60px] bg-white rounded-md p-[10px] flex gap-[300px]">
                 <div class="pt-[0px] flex">
                     <box-icon name='search' color="grey" class="mt-[10px] ml-[10px] "></box-icon>
@@ -65,7 +65,98 @@
                 </div>                
             </div> -->
             <div>
-                
+                <h1 class="text-center text-3xl font-bold text-amber-800 ">Loan Application</h1>
+                    <form action="" class="mt-[50px] ml-[130px]">
+                        <div class="">
+                            <div>
+                                <label  for="" class="text-amber-800">Loan Amount</label><br>
+                                <div class="flex">
+                                    <input  type="text"  class="bg-white mt-[] px-[30px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md" required>
+                                    <!-- <box-icon type='solid' name='user' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon> -->
+                                </div>
+                            </div>
+                            <div class="mt-[-75px]">
+                                <label  for="" class="ml-[370px]  text-amber-800">Application Date</label><br>
+                                <div class="flex ml-[180px]">
+                                    <input  type="date"  class="ml-[190px] bg-white mt-[] px-[10px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md" required>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <div>
+                                <label  for="" class="text-amber-800">Loan Term</label><br>
+                                <div class="flex ml-[]">
+                                    <select name="" id="" class="bg-white mt-[] px-[10px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md">
+                                        <option value="">Select</option>
+                                    </select>
+                                    <!-- <box-icon name='map' id="" class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon> -->
+                                </div>
+                            </div>
+                            <div class="mt-[-75px] ml-[153px]">
+                                <label  for="" class="ml-[220px] text-amber-800">Loan Purpose</label><br>
+                                <div class="flex ml-[170px]">
+                                    <input type="text" class="ml-[50px] bg-white mt-[] px-[10px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md">
+                                    <!-- <box-icon name='map' class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <div>
+                                <label  for="" class="text-amber-800">Customers ID</label><br>
+                                <div class="flex">
+                                    <input type="text" class="bg-white mt-[] px-[30px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md">
+                                    <!-- <box-icon name='map' id="LGA" class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon> -->
+                                </div>
+                            </div>
+                            <div class="ml-[105px] mt-[-70px]">
+                                <label  for="" class="ml-[270px] text-amber-800">Daily Refund</label><br>
+                                <div class="flex ml-[220px]">
+                                    <input  type="text"  class="ml-[50px] bg-white mt-[] px-[30px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md" required>
+                                    <!-- <box-icon name='phone' color='grey' class="ml-[-240px] mt-[6px] w-[20px]" ></box-icon> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mt-[10px]">
+                            <div>
+                                <label  for="" class="text-amber-800">Loan Type</label><br>
+                                <div class="flex"> 
+                                    <input  type="text" class="bg-white mt-[] px-[30px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md" required>
+                                    <!-- <box-icon name='envelope' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon> -->
+                                </div>
+                            </div>
+                            <div class=" mt-[-70px]">
+                                <label  for="" class="ml-[375px] text-amber-800">BVN</label><br>
+                                <div class="flex ml-[140px]">
+                                    <input  type="text" class= "ml-[235px] bg-white mt-[] px-[30px] w-[300px] h-[50px] border-2 border-amber-800 rounded-md" required>
+                                    <!-- <box-icon type='solid' name='dialpad' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mt-[10px]">
+                            <div>
+                                <label  for="" class="text-white">Occupation</label><br>
+                                <div class="flex">
+                                    <input  type="text" placeholder="Occupation" class="bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='briefcase-alt' color="grey" class="ml-[-240px] mt-[6px] w-[20px]"></box-icon>
+                                </div>
+                            </div>
+                            <div class="mt-[-60px] ml-[80px]">
+                                <label  for="" class="ml-[220px] text-white">BVN</label><br>
+                                <div class="flex ml-[170px]">
+                                    <input  type="text" placeholder="BVN" class= "ml-[50px] bg-white mt-[] px-[30px] w-[250px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='dialpad' color="grey" class="ml-[-240px] mt-[6px] w-[15px]"></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="mt-[10px]">
+                                <label  for="" class="text-white">Home Address</label><br>
+                                <div class="flex">
+                                    <input  type="text" placeholder="Home Adddress" class=" bg-white mt-[] px-[30px] w-[550px] h-[40px] border-2 border-black rounded-md" required>
+                                    <box-icon name='map' color="grey" class="ml-[-540px] mt-[6px] w-[20px]" ></box-icon>
+                                </div>
+                            </div>    -->
+                    </form>
             </div>
             
 
